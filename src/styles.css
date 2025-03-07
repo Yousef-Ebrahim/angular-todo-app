@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+.toast-success {
+  background-color: #74dd8c !important;
+  color: white !important;
+}
+
+.toast-error {
+  background-color: #eb6a76 !important;
+  color: white !important;
+}
+.toast-warning{
+  background-color: #f7dc6f !important; 
+}
+
+.toast-top-right {
+  top: 20px;
+  right: 20px;
+  position: fixed;
+}

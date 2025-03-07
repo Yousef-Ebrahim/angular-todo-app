@@ -1,0 +1,77 @@
+<div class="container mt-5">
+  <div class="card shadow">
+    <div class="card-header bg-primary text-white text-center">
+      <h2>📝 To-Do List</h2>
+    </div>
+
+    <div class="card-body">
+      <div class="input-group mb-3">
+        <input type="text" placeholder="Enter a task" [(ngModel)]="newTask" />
+        <button
+          type="button"
+          class="py-3 text-sm font-semibold btn btn-outline-primary btn-success"
+          (click)="addTask()"
+          [disabled]="newTask.trim() === ''"
+        >
+          ADD
+        </button>
+      </div>
+      <br />
+
+      <div class="btn-group btn-group-toggle">
+        <button
+          (click)="setFilter('all')"
+          [class.active]="filterStatus === 'all'"
+          class="px-10 py-1 text-sm font-semibold btn btn-outline-secondary"
+        >
+          📋 All Tasks
+        </button>
+        <button
+          (click)="setFilter('completed')"
+          [class.active]="filterStatus === 'completed'"
+          class="px-10 py-1 text-sm font-semibold btn btn-outline-danger"
+        >
+          ✅ Completed Tasks
+        </button>
+        <button
+          (click)="setFilter('pending')"
+          [class.active]="filterStatus === 'pending'"
+          class="px-10 py-2 text-sm font-semibold btn btn-outline-success"
+        >
+          ⏳ Uncompleted Tasks
+        </button>
+      </div>
+
+      <ul class="list-group">
+        <li
+          *ngFor="let task of filteredTasks; let i = index"
+          class="list-group-item d-flex justify-content-between align-items-center"
+        [@taskAnimation]
+          >
+          <input
+            *ngIf="task.isEditing"
+            [(ngModel)]="task.name"
+            (keydown.enter)="saveEdit(task)"
+            (blur)="saveEdit(task)"
+          />
+
+          <span
+            *ngIf="!task.isEditing"
+            [class.text-decoration-line-through]="task.completed"
+            (dblclick)="editTask(task)"
+          >
+            {{ task.name }}
+          </span>
+
+          <button (click)="toggleTask(i)" class="btn btn-sm btn-warning me-2">
+            ✔
+          </button>
+          <button (click)="confirmDelete(i)" class="btn btn-sm btn-danger">
+            ❌
+          </button>
+          <button (click)="editTask(task)">✏️</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
