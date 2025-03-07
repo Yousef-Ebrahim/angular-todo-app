@@ -1,59 +1,70 @@
-# TaskOfTasks
+لتطبيق To-Do List
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.3.
+# 📝 Angular To-Do List
 
-## Development server
+## 📌 مقدمة
+تطبيق **To-Do List** هو تطبيق بسيط وفعال لإدارة المهام اليومية، مبني باستخدام **Angular**. يمكنك إضافة المهام، وضع علامة على المهام المكتملة، وحذف المهام بسهولة، مع حفظ البيانات باستخدام **LocalStorage**.
 
-To start a local development server, run:
+---
 
-```bash
+## 🚀 **المميزات**
+✅ إضافة مهام جديدة  
+✅ حذف المهام  
+✅ وضع علامة على المهام المكتملة  
+✅ حفظ البيانات في **LocalStorage** لضمان عدم فقدان المهام  
+✅ تصميم جميل باستخدام **Bootstrap**  
+✅ تأثيرات **Animations** عند إضافة أو حذف المهام  
+
+---
+
+## 🛠️ **التقنيات المستخدمة**
+- **Angular 19**
+- **TypeScript**
+- **Bootstrap**
+- **LocalStorage**
+- **CSS Animations**
+
+---
+
+## 🔧 **طريقة التشغيل**
+1️⃣ **تأكد من تثبيت Angular CLI** إذا لم يكن لديك:
+   ```bash
+   npm install -g @angular/cli
+
+2️⃣ قم باستنساخ المشروع من GitHub:
+
+git clone https://github.com/Yousef-Ebrahim/angular-todo-app.git
+cd angular-todo-app
+
+3️⃣ ثبّت الحزم المطلوبة:
+
+npm install
+
+4️⃣ قم بتشغيل التطبيق:
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+✨ افتح المتصفح وانتقل إلى http://localhost:4200/
+📸 صور من التطبيق
 
-## Code scaffolding
+📢 مستقبل التطبيق
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+📌 إضافة دعم لإدخال الصوتي للمهام
+📌 دعم الوضع الليلي (Dark Mode)
+📌 إمكانية فرز وتصنيف المهام حسب الأولوية
+🤝 المساهمة
 
-```bash
-ng generate component component-name
-```
+إذا كنت ترغب في تحسين التطبيق أو إضافة ميزات جديدة، لا تتردد في تقديم Pull Request.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+📧 للتواصل معي:
+🔗 حسابي على GitHub
+🔥 استمتع بإدارة مهامك بكفاءة مع To-Do List! 🚀
 
-```bash
-ng generate --help
-```
 
-## Building
+---
 
-To build the project run:
+🔹 **الآن لديك ملف README.md احترافي يوضح كل شيء عن مشروعك!** 🚀  
+بعد إضافته إلى **GitHub**، سيظهر تلقائيًا في صفحة المستودع الرئيسية. ✅
 
-```bash
-ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+ChatGPT can make mistakes. Check i
